@@ -5,7 +5,7 @@ export default function Nav() {
     <header style={{ padding: "32px 0" }}>
       <nav style={{ display: "flex", justifyContent: "space-between", gap: 16 }}>
         <Link href="/" style={{ textDecoration: "none", fontWeight: 600 }}>
-          Your Name
+          Vinamr Pemmaraju
         </Link>
 
         <div style={{ display: "flex", gap: 14, fontSize: 14 }}>

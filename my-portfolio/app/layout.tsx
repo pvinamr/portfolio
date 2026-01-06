@@ -17,7 +17,7 @@ export default function RootLayout({
           <Nav />
           <main style={{ paddingBottom: 64 }}>{children}</main>
           <footer style={{ fontSize: 14, color: "#666", paddingBottom: 30 }}>
-            © {new Date().getFullYear()} Your Name
+            © {new Date().getFullYear()} Vinamr Pemmaraju
           </footer>
         </div>
       </body>
