@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import { site } from "@/lib/site";
+import { Orbitron } from "next/font/google";
 
-export const metadata: Metadata = {
-  title: "Vinamr Pemmaraju",
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const metadata = {
+  title: site.name,
   description: "Portfolio",
 };
 
@@ -12,7 +19,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body style={{ margin: 0 }}>
+      <body className={orbitron.className}>
         <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 20px" }}>
           <Nav />
           <main style={{ paddingBottom: 64 }}>{children}</main>

@@ -24,7 +24,7 @@ export default async function ProjectDetailPage({
 
       <h1 style={{ margin: 0, fontSize: 26 }}>{project.title}</h1>
 
-      <p style={{ margin: 0, color: "#333", lineHeight: 1.6 }}>
+      <p style={{ margin: 0, color: "#6b6666ff", lineHeight: 1.6 }}>
         {project.description}
       </p>
 
