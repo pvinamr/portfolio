@@ -18,7 +18,10 @@ export default async function ProjectDetailPage({
 
   return (
     <section style={{ display: "grid", gap: 18 }}>
-      <Link href="/projects" style={{ textDecoration: "none", color: "#666", fontSize: 14 }}>
+      <Link
+        href="/projects"
+        style={{ textDecoration: "none", color: "#666", fontSize: 14 }}
+      >
         ← Back to projects
       </Link>
 
@@ -28,16 +31,21 @@ export default async function ProjectDetailPage({
         {project.description}
       </p>
 
-      <div style={{ display: "flex", gap: 14, fontSize: 14 }}>
-        <a href={project.githubUrl} target="_blank" rel="noreferrer">
-          GitHub ↗
-        </a>
-        {project.liveUrl ? (
-          <a href={project.liveUrl} target="_blank" rel="noreferrer">
-            Live demo ↗
-          </a>
-        ) : null}
-      </div>
+      {(project.githubUrl || project.liveUrl) && (
+        <div style={{ display: "flex", gap: 14, fontSize: 14 }}>
+          {project.githubUrl && (
+            <a href={project.githubUrl} target="_blank" rel="noreferrer">
+              GitHub ↗
+            </a>
+          )}
+
+          {project.liveUrl && (
+            <a href={project.liveUrl} target="_blank" rel="noreferrer">
+              Live demo ↗
+            </a>
+          )}
+        </div>
+      )}
     </section>
   );
 }

@@ -3,7 +3,7 @@ export type Project = {
   title: string;
   blurb: string;
   description: string;
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
   featured?: boolean;
 };
@@ -35,6 +35,22 @@ export const projects: Project[] = [
       "mvp is a full-stack machine learning pipeline that predicts NFL game outcomes, compares them to DraftKings market spreads, and stores results in a cloud Postgres database. Built with FastAPI, Next.js, Supabase, Render, and Python ML modeling.",
     githubUrl: "https://github.com/pvinamr/mvp",
     liveUrl: "https://mvp-nfl-model.vercel.app/",
+    featured: true,
+  },
+
+  {
+    slug: "efds",
+    title: "efds",
+    blurb: "embedded face detection system using viola-jones algorithm.",
+    description: "I designed and implemented an embedded face detection system based on the Viola–Jones algorithm, consisting of a custom C++ training pipeline and a dataflow-based runtime optimized for a Raspberry Pi. Due to project constraints, all image-processing components—including integral images, Haar feature evaluation, and PNG parsing—were implemented from scratch without using OpenCV. The system uses cascaded AdaBoost classifiers to enable early rejection and efficient inference, and multiple cascade configurations were evaluated using accuracy, false positive rate, and runtime metrics with Pareto-optimal analysis. This project demonstrates my ability to build efficient, scalable computer vision systems under strict hardware, software, and data constraints while balancing performance and reliability.",
+    featured: true,
+  },
+
+  {
+    slug: "microcaml_engine",
+    title: "microcaml engine",
+    blurb: "implementing a custom lexer, parser, and evaluator.",
+    description: "I developed a complete interpreter for MicroCaml, a subset of the OCaml programming language, by implementing a custom lexer, parser, and evaluation engine in software. The system converts source code into an Abstract Syntax Tree (AST) and correctly evaluates expressions and statements according to OCaml’s semantics, including variable bindings, function definitions, and expression evaluation. This project strengthened my understanding of programming language design, parsing techniques, and interpreter architecture, and demonstrates my ability to build language tooling from the ground up with a strong focus on correctness and formal structure. ",
     featured: true,
   },
 ];

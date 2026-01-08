@@ -3,7 +3,7 @@ export default function ResumePage() {
     <section style={{ display: "grid", gap: 14 }}>
 
       <p style={{ margin: 0 }}>
-        <a href="/resume.pdf">click to access resume</a>
+        <a href="/resume.pdf">click to open resume in a new window</a>
       </p>
 
       <div style={{ border: "1px solid #eee", borderRadius: 10, overflow: "hidden" }}>
