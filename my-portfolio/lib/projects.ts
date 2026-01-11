@@ -42,7 +42,7 @@ export const projects: Project[] = [
     slug: "efds",
     title: "efds",
     blurb: "embedded face detection system using viola-jones algorithm.",
-    description: "I designed and implemented an embedded face detection system based on the Viola–Jones algorithm, consisting of a custom C++ training pipeline and a dataflow-based runtime optimized for a Raspberry Pi. Due to project constraints, all image-processing components—including integral images, Haar feature evaluation, and PNG parsing—were implemented from scratch without using OpenCV. The system uses cascaded AdaBoost classifiers to enable early rejection and efficient inference, and multiple cascade configurations were evaluated using accuracy, false positive rate, and runtime metrics with Pareto-optimal analysis. This project demonstrates my ability to build efficient, scalable computer vision systems under strict hardware, software, and data constraints while balancing performance and reliability.",
+    description:"I designed and implemented an embedded face detection system based on the Viola–Jones algorithm, consisting of a custom C++ training pipeline and a dataflow-based runtime optimized for a Raspberry Pi. Due to project constraints, all image-processing components such as integral images, Haar feature evaluation, and PNG parsing were implemented from scratch without using OpenCV. The system uses cascaded AdaBoost classifiers to enable early rejection and efficient inference. Additionally, multiple cascade configurations were evaluated using accuracy, false positive rate, and runtime metrics. This project demonstrates my ability to build scalable computer vision systems under strict software and data constraints while optimizing performance and reliability.",
     featured: true,
   },
 
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     slug: "microcaml_engine",
     title: "microcaml engine",
     blurb: "implementing a custom lexer, parser, and evaluator.",
-    description: "I developed a complete interpreter for MicroCaml, a subset of the OCaml programming language, by implementing a custom lexer, parser, and evaluation engine in software. The system converts source code into an Abstract Syntax Tree (AST) and correctly evaluates expressions and statements according to OCaml’s semantics, including variable bindings, function definitions, and expression evaluation. This project strengthened my understanding of programming language design, parsing techniques, and interpreter architecture, and demonstrates my ability to build language tooling from the ground up with a strong focus on correctness and formal structure. ",
+    description: "I developed a complete interpreter for MicroCaml, a subset of OCaml, by implementing a custom lexer, parser, and evaluator. The system converts source code into an Abstract Syntax Tree (AST) and correctly evaluates expressions and statements according to OCaml’s semantics. Features such as variable bindings, function definitions, and expression evaluation were all included. This project strengthened my understanding of programming language design and interpreter architecture, and demonstrates my ability to build language tooling from the ground up.",
     featured: true,
   },
 ];

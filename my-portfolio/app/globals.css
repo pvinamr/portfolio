@@ -32,10 +32,14 @@ a {
 }
 
 a:hover,
-a:focus-visible {
+a:focus-visible { 
   color: #eee7e7;       
 }
 
 a:hover {
   opacity: 0.85;
+}
+
+html {
+  zoom: 1.25;
 }
